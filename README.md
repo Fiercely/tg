@@ -22,7 +22,21 @@ Fourth, in peer_name '#' are substitued to '@'. (Not applied to appending of '#%
 
 Clone GitHub Repository
 
-     git clone --recursive https://github.com/vysheng/tg.git && cd tg
+     git clone --recursive https://github.com/Fiercely/tg.git && cd tg
+
+### Creating a Binary debian package
+After cloning this repository run the following command 
+	
+	sudo bash build-package.sh 
+
+This will compile the package according to your own architecture
+
+
+### Installing from the above created binary file
+
+	sudo dpkg -i telegram_cli_XXX_ARHC.deb
+
+This will install the current telegram-cli binary to /opt/bin/telegram-cli
 
 ### Python Support
 
